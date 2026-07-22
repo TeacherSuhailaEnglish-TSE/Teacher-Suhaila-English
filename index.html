@@ -46,20 +46,46 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 5%;
+            padding: 0.8rem 5%;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            border-radius: 50%;
+            border: 2px solid var(--secondary);
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 800;
             color: var(--primary);
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 5px;
         }
 
         .logo span {
             color: var(--secondary);
+        }
+
+        .nav-slogan {
+            background: #FFF9E6;
+            color: #B7791F;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border: 1px dashed var(--secondary);
+            display: inline-block;
         }
 
         .nav-links {
@@ -116,7 +142,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 140px 5% 80px;
+            padding: 150px 5% 80px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -131,10 +157,23 @@
             min-width: 300px;
         }
 
+        .hero-badge {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            color: var(--secondary);
+            border: 1px solid var(--secondary);
+            padding: 6px 16px;
+            border-radius: 25px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
         .hero-text h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--secondary);
+            margin-bottom: 15px;
+            color: var(--white);
+            line-height: 1.3;
         }
 
         .hero-text p {
@@ -384,6 +423,10 @@
             padding: 30px 5%;
         }
 
+        @media (max-width: 900px) {
+            .nav-slogan { display: none; }
+        }
+
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .hero-text h1 { font-size: 1.8rem; }
@@ -394,10 +437,18 @@
 
     <!-- Header / Navbar -->
     <nav class="navbar">
-        <div class="logo">
-            <i class="fa-solid fa-graduation-cap"></i>
-            Teacher <span>Suhaila</span>
+        <div class="logo-container">
+            <!-- ضعي اسم صورة اللوجو الخاص بكِ مكان logo.png -->
+            <img src="logo.png" alt="Teacher Suhaila Logo" class="logo-img" onerror="this.style.display='none'">
+            <div class="logo">
+                Teacher <span>Suhaila</span>
+            </div>
         </div>
+
+        <div class="nav-slogan">
+            ✨ اتعود على الانجليزي.. متحفظوش!
+        </div>
+
         <ul class="nav-links">
             <li><a href="#about">عن المعلمة</a></li>
             <li><a href="#features">المميزات</a></li>
@@ -410,6 +461,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-text">
+            <div class="hero-badge">🎯 اتعود على الانجليزي.. متحفظوش!</div>
             <h1>احترف اللغة الإنجليزية بثقة وسهولة</h1>
             <p>دروس أونلاين تفاعلية مصممة خصيصاً للطلاب في السعودية والخليج، لمختلف المراحل والمناهج التعليمية مع المعلمة سهيلة القاضي.</p>
             <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية" class="btn-primary" target="_blank" style="font-size: 1.1rem; padding: 0.8rem 2rem;">احجز جلسة تقييم مجانية <i class="fa-solid fa-arrow-left"></i></a>
@@ -534,7 +586,7 @@
                     <div class="price">400 ريال / شهرياً</div>
                     <ul class="features-list">
                         <li><i class="fa-solid fa-circle-check"></i> 8 حصص خاصة ومكثفة لكسر حاجز الخوف في التحدث</li>
-                        <li><i class="fa-solid fa-circle-check5"></i> تصحيح الأخطاء اللغوية والنطقية بشكل فوري</li>
+                        <li><i class="fa-solid fa-circle-check"></i> تصحيح الأخطاء اللغوية والنطقية بشكل فوري</li>
                         <li><i class="fa-solid fa-circle-check"></i> إثراء الحصيلة اللغوية ومواقف حياتية واقعية</li>
                         <li><i class="fa-solid fa-circle-check"></i> إعداد وتهيئة لاختبارات القدرات والـ STEP</li>
                     </ul>
