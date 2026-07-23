@@ -390,6 +390,42 @@
             font-weight: 700;
         }
 
+        /* Social Media Section */
+        .social-section {
+            background: #F8FAFC;
+            text-align: center;
+        }
+
+        .social-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .social-card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 25px;
+            border-radius: 30px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        }
+
+        .social-card:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        .social-card.facebook { background-color: #1877f2; }
+        .social-card.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .social-card.tiktok { background-color: #000000; }
+
         /* Floating WhatsApp Button */
         .whatsapp-btn {
             position: fixed;
@@ -438,7 +474,6 @@
     <!-- Header / Navbar -->
     <nav class="navbar">
         <div class="logo-container">
-            <!-- ضعي اسم صورة اللوجو الخاص بكِ مكان logo.png -->
             <img src="logo.png" alt="Teacher Suhaila Logo" class="logo-img" onerror="this.style.display='none'">
             <div class="logo">
                 Teacher <span>Suhaila</span>
@@ -454,8 +489,9 @@
             <li><a href="#features">المميزات</a></li>
             <li><a href="#packages">الباقات والأسعار</a></li>
             <li><a href="#testimonials">آراء الطلاب</a></li>
+            <li><a href="#social">تواصل معي</a></li>
         </ul>
-        <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية" class="btn-primary" target="_blank">احجز تقييم مجاني</a>
+        <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية" class="btn-primary" target="_blank">احجز تحديد مستوى مجاني</a>
     </nav>
 
     <!-- Hero Section -->
@@ -463,8 +499,8 @@
         <div class="hero-text">
             <div class="hero-badge">🎯 اتعود على الانجليزي.. متحفظوش!</div>
             <h1>احترف اللغة الإنجليزية بثقة وسهولة</h1>
-            <p>دروس أونلاين تفاعلية مصممة خصيصاً للطلاب في السعودية والخليج، لمختلف المراحل والمناهج التعليمية مع المعلمة سهيلة القاضي.</p>
-            <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية" class="btn-primary" target="_blank" style="font-size: 1.1rem; padding: 0.8rem 2rem;">احجز جلسة تقييم مجانية <i class="fa-solid fa-arrow-left"></i></a>
+            <p>دروس أونلاين تفاعلية مصممة خصيصاً للطلاب في مصر والسعودية، لمختلف المراحل والمناهج التعليمية والدورات مع المعلمة سهيلة القاضي.</p>
+            <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية" class="btn-primary" target="_blank" style="font-size: 1.1rem; padding: 0.8rem 2rem;">احجز جلسة تحديد مستوى مجانية <i class="fa-solid fa-arrow-left"></i></a>
         </div>
         <div class="hero-image">
             <img src="Suhaila.jpg" alt="Teacher Suhaila English" id="profileImage">
@@ -507,7 +543,7 @@
                 <i class="fa-solid fa-book-bookmark"></i>
                 <div>
                     <h3>تغطية كافة المناهج</h3>
-                    <p>إتقان كامل لمختلف المناهج المدرسية الدولية والمناهج الخليجية والسعودية مع تأسيس المهارات الأربع.</p>
+                    <p>إتقان كامل لمختلف المناهج المدرسية الدولية والمناهج المصرية والسعودية مع تأسيس المهارات الأربع.</p>
                 </div>
             </div>
         </div>
@@ -524,8 +560,8 @@
             </div>
             <div class="card">
                 <i class="fa-solid fa-book-open"></i>
-                <h3>مناهج الخليج والسعودية</h3>
-                <p>تغطية شاملة لمناهج We Can، Super Goal، وMega Goal مع مراجعات للاختبارات.</p>
+                <h3>مناهج مصر والسعودية</h3>
+                <p>تغطية شاملة لمناهج We can, Super Goal, Mega Goal, Connect, Connect Plus, New Hello مع مراجعات دورية ومراجعات نهائية ومتابعات مع ولي الأمر مباشرة.</p>
             </div>
             <div class="card">
                 <i class="fa-solid fa-award"></i>
@@ -554,8 +590,8 @@
                     </ul>
                 </div>
                 <div class="card-buttons">
-                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية لباقة التأسيس" class="btn-outline" target="_blank">طلب جلسة تقييم مجانية</a>
-                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في الاشتراك في باقة التأسيس الشامل" class="btn-primary" target="_blank">اشتري الآن (تحويل بنكي / STC)</a>
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة مجانية لباقة التأسيس" class="btn-outline" target="_blank">طلب جلسة مجانية</a>
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في الاشتراك في باقة التأسيس الشامل" class="btn-primary" target="_blank">اشترك الآن (تحويل بنكي / STC)</a>
                 </div>
             </div>
 
@@ -573,8 +609,8 @@
                     </ul>
                 </div>
                 <div class="card-buttons">
-                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية لباقة المناهج المدرسية" class="btn-outline" target="_blank">طلب جلسة تقييم مجانية</a>
-                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في الاشتراك في باقة المناهج المدرسية" class="btn-primary" target="_blank">اشتري الآن (تحويل بنكي / STC)</a>
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة مجانية لباقة المناهج المدرسية" class="btn-outline" target="_blank">طلب جلسة مجانية</a>
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في الاشتراك في باقة المناهج المدرسية" class="btn-primary" target="_blank">اشترك الآن (تحويل بنكي / STC)</a>
                 </div>
             </div>
 
@@ -592,8 +628,27 @@
                     </ul>
                 </div>
                 <div class="card-buttons">
-                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة تقييم مجانية لباقة المحادثة" class="btn-outline" target="_blank">طلب جلسة تقييم مجانية</a>
-                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في الاشتراك في باقة المحادثة وتطوير اللغة" class="btn-primary" target="_blank">اشتري الآن (تحويل بنكي / STC)</a>
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة مجانية لباقة المحادثة" class="btn-outline" target="_blank">طلب جلسة مجانية</a>
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في الاشتراك في باقة المحادثة وتطوير اللغة" class="btn-primary" target="_blank">اشترك الآن (تحويل بنكي / STC)</a>
+                </div>
+            </div>
+
+ <!-- Package 4: CEFR Levels -->
+            <div class="price-card">
+                <div>
+                    <h3>باقة المستويات</h3>
+                    <div class="target-age">مخصص للكبار والبالغين  STEP</div>
+                    <div class="price">400 ريال / شهرياً</div>
+                    <ul class="features-list">
+                        <li><i class="fa-solid fa-circle-check"></i> 12 حصة شهرياً</li>
+                        <li><i class="fa-solid fa-circle-check"></i> التركيز على مهارات اللغة الأربع</li>
+                        <li><i class="fa-solid fa-circle-check"></i> توظيف القواعد والكلمات بشكل عملي</li>
+                        <li><i class="fa-solid fa-circle-check"></i> ممارسة التحدث من أول حصة</li>
+                    </ul>
+                </div>
+                <div class="card-buttons">
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في حجز جلسة مجانية لباقة المستويات" class="btn-outline" target="_blank">طلب جلسة مجانية</a>
+                    <a href="https://wa.me/201123794455?text=مرحباً مس سهيلة، أرغب في الاشتراك في باقة المستويات" class="btn-primary" target="_blank">اشترك الآن (تحويل بنكي / STC)</a>
                 </div>
             </div>
 
@@ -616,6 +671,16 @@
                 <p>"درجاتي في اختبار الإنجليزي تحسنت بشكل ممتاز بفضل الله ثم مراجعاتك للمنهج."</p>
                 <h4>- الطالبة ريم (الدمام)</h4>
             </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section" id="social">
+        <h2 class="section-title">صفحات التواصل الاجتماعي</h2>
+        <div class="social-grid">
+            <a href="#" class="social-card facebook" target="_https://www.facebook.com/share/14ixuu5ffXK/"><i class="fa-brands fa-facebook-f"></i> فيسبوك</a>
+            <a href="#" class="social-card instagram" target="_https://www.instagram.com/teacher.suhaila.english?igsh=MTB6Z3R6OTM5M2hidw=="><i class="fa-brands fa-instagram"></i> إنستغرام</a>
+            <a href="#" class="social-card tiktok" target="_https://www.tiktok.com/@teacher.suhaila.e?_r=1&_t=ZS-98H3AMzbDWu"><i class="fa-brands fa-tiktok"></i> تيك توك</a>
         </div>
     </section>
 
